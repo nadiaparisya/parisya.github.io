@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Sweet Cakes</title>
+    <!--====mengatur menu===--->
+    <style>
+    html,body{
+    width: 100%;
+    height: 100%;
+    }
+        .nav-link{
+        margin-left: 15px;
+        }
+        .navbar{
+    margin-top: 30px;
+    background-color: transparent;
+    transition: .5s;
+    }
+   .head{
+   width:100%;
+   height:150%;
+   background-image: url("https://images.unsplash.com/photo-1519869491916-8ca6f615d6bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+   }
+    .space{
+    width: 10px;
+    height: 50px;
+  
+    }
+    .opc{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,  0.445);
+    }
+    
+    .caption{
+    color: white;
+    padding-top: 270px;}
+    
+    .btn-rounded{
+    padding: 7px 50px;
+    border-radius: 100px;
+    }
+    
+    .box-menu{
+    background: linear-gradient(to right, #007aff, #017bff47);
+    width:100%;
+    border-radius: 5px;
+    padding: 50px;
+    color:white;
+    box-shadow:0px 2px 5px #0000001a;
+    }
+    
+    .pesanan{
+     width:100%;
+   height:100%;
+   background-image: url("https://cdn1.thehunt.com/app/public/system/note_images/7805937/note_view/2c93a6c21d03e42c835585f9214ffddb.png");
+    background-size: cover;
+    }
+    
+    #preloader{
+     position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #ffffff none repeat scroll 0% 0%;
+    }
+   
+ .socket {
+    position: relative;
+    top: 40%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    display:block;
+}
+.socket img{
+  display:block;
+  margin:auto;
+}
+    </style>
+     <script src="jquery.min.js"></script>
+<script type="text/javascript">
+ (function( $ ) {   
+     $(window).on('load', function(){
+      $('#preloader').fadeOut(2000,function(){
+         });
+     });
+
+    })(jQuery);
+
+</script>
+    
+  </head>
+  <body>
+  
+    <!-- Pre Loader -->
+    <div id="preloader">
+
+    <div class="socket">
+      <img src="preloader.gif" alt="load img">
+      <center>
+      <p> Loading...</p>
+    </div>
+    </div>
+  
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark  ">
+      <div class="container">
+      <!--========= Buat ngatur Logo=============---->
+      <a class="navbar-brand" href="#">Sweet Cakes</a>
+      </a>
+      <!---==================== Selesai logo========-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!--========== Buat menu =============-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#About">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#menu">Menu<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#reservation">Reservation<span class="sr-only">(current)</span></a>
+          </li>
+          <!--=================== Selesai Buat menu =================-->
+          
+        </ul>
+        
+      </div>
+      </div>
+</nav>
+    <!--===== Mengatur penamplan ====-->
+    <div class="head">
+    <div class="opc">
+     <div class="container" style="color: white; padding-top: 270px;">
+     
+     <h5> </h5>
+     <h1 style="font-size: 3em;"> We present you the best masterpiece for gifting</h1>
+     <p> 
+        Suit for any occasions and celebrations such as birthday, anniversary and graduations with many variation of cakes from opera, red velvet, blackforest, custom cake or photo printed cake is available to complete your best moment.
+     </p>
+     <p> For Order </p>
+            <input  class="  btn-light btn-rounded" type="text" name="" placeholder="Enter name">
+            <p>Password</p>
+            <input  class="  btn-light btn-rounded" type="text" name="" placeholder="Enter Password"  >
+            <br><br>
+            <input type="submit" name="" value="Login">
+            <br><br>
+            <a href="#"> Forgot youre password?</a>
+            <br><br>
+            <a href="#">Dont have any account?</a>
+     
+     </div>
+    </div>
+    </div>
+<div class="space"> </div>
+<section id="About">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-6  col-sm-12" style="margin-bottom: 20px;"> 
+        <center>
+        <img src="cake.jpg"alt="logo" width="80%" height="auto">
+        </center>
+        </div>
+        <div class="col-lg-6  col-sm-12" style="margin-bottom: 20px;">
+        <h1>About Us </h1>
+  
+            <p> Sweet Cakes is home to a delightful range of cakes. Taste, quality, and sincerity are the primary focus of each creation. Carefully selected ingredients, balanced texture, flavor and presentation goes into baking every single delicious cake at Sweet Cakes. The finest ingredients in combination with perfeted techniques give bith to product with lifelong porpularity that are loved by many ( Cakes and Bakeries hand delivered in Jakarta by our own staff. Express 24 and 48 hour Delivery ).  </p>
+            
+            <br><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            
+            
+        
+    
+        
+        
+          </div>
+        </div>
+        </div>
+ </section>
+ <section id="menu">
+        <div class="container">
+        <div class="row">
+        <div class="col-12">
+        <center>
+        <h2>Menu</h2>
+        <hr>
+        </center>
+        </div>
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box text-center">
+        <i class="fab fa-cobol" style="font-size: 3em"></i>
+        <br>
+        <b>Blackforest</b>
+        <br><br>
+        <img src="Blackforest.png"alt="logo" width="80%" heigh>
+        <br><br>
+        <a href="#" class="btn btn-danger btn-"> order</a>
+        <br><br>
+        <br><br>
+        </div>
+        </div>
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box text-center">
+        <i class="fab fa-pizza" style="font-size: 3em"></i>
+        <br>
+        <b>Red Velvet</b>
+        <br><br>
+        <img src="redvelvet.png"alt="logo" width="80%" heigh>
+        <br><br>
+        <a href="#" class="btn btn-danger btn-"> order</a>
+        <br><br>
+        <br><br>
+        
+        </div>
+        </div>
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box- text-center">
+        <i class="fab moza" style="font-size: 3em"></i>
+        <br>
+        <b>Tiramisu</b>
+        <br><br>
+        <img src="tira.png"alt="logo" width="100%" heigh>
+        <br><br>
+        <a href="#" class="btn btn-danger btn-"> Pesan</a>
+        <br><br>
+        <br><br>
+        </div>
+        </div>
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box- text-center">
+        <i class="fab fa-Marzano" style="font-size: 3em"></i>
+        <br>
+        <b>Vanilla Cream Cheese</b>
+        <br><br>
+        <img src="van.png"alt="logo" width="80%" heigh>
+        <br><br>
+        <a href="#" class="btn btn-danger btn-"> Pesan</a>
+        <br><br>
+        <br><br>
+        </div>
+        </div>
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box-m text-center">
+        <i class="fab fa-spaghetti" style="font-size: 3em"></i>
+        <br>
+        <b>Oreo Delight</b>
+        <br><br>
+        <img src="oreoo.png"alt="logo" width="80%" heigh>
+        <br><br>
+        <a href="#" class="btn btn-danger btn-"> Pesan</a>
+        <br><br>
+        <br><br>
+        </div>
+        </div>
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box- text-center">
+        <i class="fab " style="font-size: 3em"></i>
+        <br>
+        <b>Almond Pastry</b>
+        <br><br>
+        <img src="almond.png"alt="logo" width="80%" heigh>
+        <br><br>
+        <a href="#" class="btn btn-danger btn-"> Pesan</a>
+        <br><br>
+        <br><br>
+        </div>
+        </div>
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box- text-center">
+        <i class="fab " style="font-size: 3em"></i>
+        <br>
+        <b>Muffin</b>
+        <br><br>
+         <img src="muffin.png"alt="logo" width="80%" heigh>
+         <br><br>
+         <a href="#" class="btn btn-danger btn-"> Pesan</a>
+        <br><br>
+        <br><br>
+        </div>
+        </div>
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box- text-center">
+        <i class="fab " style="font-size: 3em"></i>
+        <br>
+        <b>Brownies</b>
+        <br><br>
+         <img src="brownies.png"alt="logo" width="80%" heigh>
+         <br><br>
+         <a href="#" class="btn btn-danger btn-"> Pesan</a>
+        <br><br>
+        <br><br>
+        </div>
+        </div>
+        
+      
+        
+        <div class="col-lg-4  col-sm-12" style="margin-bottom: 20px;"> 
+        <div class="box-m text-center">
+        <i class="fab fa-salad" style="font-size: 3em"></i>
+        <br>
+        <b>Pumpkin Pie</b>
+        <br><br>
+        <img src="piee.png"alt="logo" width="80%" heigh>
+
+        <br><br>
+        <a href="#" class="btn btn-danger btn-"> Pesan</a>
+        <br><br>
+        </div>
+        </div>
+       
+        </div>
+        </div>
+        
+        
+ </section>
+ <section>
+ <div class="space"> </div>
+ <section style="width:100%; background-color: #1f1f1f;">
+ <div class="text-center" style="padding:10px; color: white;">
+<h5></h5>
+</div>
+</section>
+
+
+ <!-- Start Reservation section -->
+  <div class="pesanan">
+  <section id="reservation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-reservation-area">
+            <div class="mu-title">
+            <center>
+              <span class="mu-subtitle">Make A</span>
+              <h2>Reservation</h2>
+              <i class="fa fa-spoon"></i>              
+              <span class="mu-title-bar"></span>
+              </center>
+            </div>
+     
+            <div class="mu-reservation-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quidem autem iusto, perspiciatis, amet, quaerat blanditiis ducimus eius recusandae nisi aut totam alias consectetur et.</p>
+              <form class="mu-reservation-form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">                       
+                      <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">                        
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">                        
+                      <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option value="0">How Many?</option>
+                        <option value="1 Person">1 Person</option>
+                        <option value="2 People">2 People</option>
+                        <option value="3 People">3 People</option>
+                        <option value="4 People">4 People</option>
+                        <option value="5 People">5 People</option>
+                        <option value="6 People">6 People</option>
+                        <option value="7 People">7 People</option>
+                        <option value="8 People">8 People</option>
+                        <option value="9 People">9 People</option>
+                        <option value="10 People">10 People</option>
+                      </select>                      
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="datepicker" placeholder="Date">              
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Phone No">                      
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="mu-readmore-btn">Make Reservation</button>
+                </div>
+              </form>      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- End Reservation section -->
+<br> <br>
+
+ <!-- Start Contact section -->
+  <section id="mu-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-contact-area">
+            <div class="mu-title">
+              <span class="mu-subtitle">Get In Touch</span>
+              <h2>Contact Us</h2>
+              <i class="fa fa-spoon"></i>              
+              <span class="mu-title-bar"></span>
+            </div>
+            <div class="mu-contact-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mu-contact-left">
+                    <form class="mu-contact-form">
+                      <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>                      
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>                        
+                        <textarea class="form-control" id="message" cols="30" rows="10" placeholder="Type Your Message"></textarea>
+                      </div>                      
+                      <button type="submit" class="mu-send-btn">Send Message</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mu-contact-right">
+                    <div class="mu-contact-widget">
+                      <h3>Office Address</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia temporibus corporis ea non consequatur porro corrupti hic voluptatibus assumenda, doloribus.</p>
+                      <address>
+                        <p><i class="fa fa-phone"></i> (62) 86786878</p>
+                        <p><i class="fa fa-envelope-o"></i>sweetcakes@gmail.com</p>
+                        <p><i class="fa fa-map-marker"></i>88 St. Ramayana, Jakarta, INA</p>
+                      </address>
+                    </div>
+                    <div class="mu-contact-widget">
+                      <h3>Open Hours</h3>                      
+                      <address>
+                        <p><span>All Day</span> 24 hours </p>
+                      </address>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact section -->
+
+  <!-- Start Map section -->
+  <section id="mu-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9207.358598888495!2d-85.64847801496286!3d30.183918972289003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2320479d70eb6202!2sDillard&#39;s!5e0!3m2!1sbn!2sbd!4v1462359735720" width="100%" height="100%" frameborder="0"allowfullscreen></iframe>
+  </section>
+  <!-- End Map section -->
+
+  <!-- Start Footer -->
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="mu-footer-area">
+           <div class="mu-footer-social">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-google-plus"></span></a>
+            <a href="#"><span class="fa fa-linkedin"></span></a>
+            <a href="#"><span class="fa fa-youtube"></span></a>
+          </div>
+          <div class="mu-footer-copyright">
+            <p>Designed by <a rel="nofollow" href="http://www.stuxyaquaresto.com//">Stuxy</a></p>
+          </div>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <!--========== Mengatur Animation====-->
+   <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()> 50){
+                $('.navbar').css('background-color','rgb(0, 0, 0, 0.63)');
+                $('.navbar').css('margin-top','0px');
+            }else{
+                $('.navbar').css('background-color','transparent');
+                $('.navbar').css('margin-top','30px');
+            }
+        });
+    });
+    </script>
+  </body>
+</html>
